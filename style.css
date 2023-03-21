@@ -4,24 +4,33 @@
   box-sizing: border-box;
 }
 body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #141313;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.4s ease-in;
 }
 main {
   width: 500px;
-  height: 90vh;
+  height: 80vh;
 }
 .calculator-heading {
   display: flex;
   height: 30vh;
 }
 .display-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   height: 100%;
-  background-color: purple;
-  color:white;
+  background-color: #2F3332;
+  color:#fff;
+  font-size: 24px;
+  transition: background-color 0.4s ease-in;
 }
 .clear-button {
   width: 20%;
@@ -34,7 +43,35 @@ main {
   grid-template-rows: repeat(4, 15%);
 }
 button{
+    cursor: pointer;
+    border: 1px solid #fff;
+    color:#fff;
+    background-color: #2F3332;
     font-size: 24px;
+    transition: background-color 0.4s ease-in;
+}
+.switch-mode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#fff;
+}
+i{
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color:#fff
+}
+#passive{
+    display: none;
+}
+#active{
+    display: block;
+}
+.DayMode{
+    background-color: #ffff;
+    color:#000000;
+    border: 1px solid #000000;
 }
 @media only screen and (max-width: 768px) {
   main {
