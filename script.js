@@ -50,4 +50,3 @@ iconNight.addEventListener("click",()=>{
     );
     screen.classList.remove("DayMode")
 });
-
